@@ -63,4 +63,13 @@ header {
 }
 
 
+.menu-toggle span {
+  background: #000;
+}
+
+.menu-toggle.active span {
+  background:white;
+}
+
+
 
