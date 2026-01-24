@@ -1,7 +1,7 @@
 * {
-    margin: 0;      
-    padding: 0;
-    box-sizing: border-box;    
+    margin: 0;                               /*Remove margens padrão*/   
+    padding: 0;                              /*Remove espaçamentos internos padrão*/
+    box-sizing: border-box;                  /*Mantém Largura e Altura fixas, incluindo padding e borda*/
 }
 
 
@@ -15,6 +15,7 @@ header {
     top: 20px;
     right: 20px;
     z-index: 1000;
+
 }
 
 
