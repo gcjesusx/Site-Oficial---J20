@@ -1,89 +1,102 @@
+/* Reset Global: Remove padrões do navegador */
 * {
-    margin: 0;                               /*Remove margens padrão*/   
-    padding: 0;                              /*Remove espaçamentos internos padrão*/
-    box-sizing: border-box;                  /*Mantém Largura e Altura fixas, incluindo padding e borda*/
+    margin: 0;                               /* Remove margens externas padrão de todos os elementos. */   
+    padding: 0;                              /* Remove espaçamentos internos padrão */
+    box-sizing: border-box;                  /* Mantém Largura e Altura fixas, incluindo padding e borda */
 }
 
-
+/* Cabeçalho (Container do botão de menu) */
 header {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+    position: fixed;                         /* Fixa o Header na tela. Não rola com a página.*/
+    top: 20px;                               /* Distância do topo da tela */
+    right: 20px;                             /* Distância da direita da tela */
+    z-index: 1000;                           /* Garante que fique acima de outros elementos */
 
 }
 
-
+/* Botão do menu hambúrguer */
 .menu-toggle {
-    width: 30px;
-    cursor: pointer;
+    width: 30px;                             /* Largura total do botão */
+    cursor: pointer;                         /* Mãozinha */
 }
-        
-
+    
+/* Barras do ícone hambúrguer */
 .menu-toggle span {
-    display: block;
-    height: 3px;
-    background: #000;
-    margin: 5px 0;
-    transition: 0.3s;
+    display: block;                          /* Faz cada span ocupar uma linha */                  
+    height: 3px;                             /* Espessura da barra */
+    background: #000;                      /* Cor da Barra */
+    margin: 5px 0;                           /* Espaçamento vertical entre as barras */
+    transition: 0.3s;                        /* Animação suave para mudanças visuais */
 }
 
-
+/* Menu Lateral */
 .menu {
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    background: #111;
-    padding-top: 60px;
-    transition: 0.3s;
+    position: fixed;                         /* Fixa o menu na tela */
+    top: 0;                                  /* Alinha ao topo da viewport */
+    right: -200px;                           /* Esconde o menu fora da tela (à direita) */
+    width: 200px;                            /* Largura do menu */
+    height: 100vh;                           /* Altura total da tela */
+    background: #111;                      /* Cor de fundo */
+    padding-top: 60px;                       /* Espaço interno no topo para afastar os Links */
+    transition: 0.3s;                        /* Transição */
 }
 
-
+/* Links do menu */
 .menu a {
-    display: block;
-    color: white;
-    padding: 15px;
-    text-decoration: none;
+    display: block;                          /* Faz cada link ocupar uma linha inteira */
+    color: white;                          /* Cor */
+    padding: 15px;                           /* Espaço Interno do link */
+    text-decoration: none;                   /* Remove sublinhado */
 }
 
-
+/* Efeito hover nos links */
 .menu a:hover {
-    background: #333;
+    background: #333;                      /* Destaque Visual ao passar o mouse */
 }
 
-
+/* Estado ativo do menu (visível) */
 .menu.active {
-    right: 0;
+    right: 0;                                /* Move o menu para dentro da tela */
 }
 
-
+/* Cor padrão das barras do menu */
 .menu-toggle span {
-  background: #000;
+  background: #000;                        /* Cor preta quando o menu está fechado */
 }
 
+/* Cor das barras quando o menu está ativo */
 .menu-toggle.active span {
-  background:white;
+  background:white;                        /* Cor branca quando o menu está aberto */
 }
 
+/* Estilo global do corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;  /* Fonte padrão */
+    line-height: 1.5;                           /* Leitura agradável */
+    color: #111;                              /* Cor */
+}
 
+/* Títulos Principais */
 h1, h2 {
-    font-size: 32px;
-    font-family: 'Verdana';
-    text-align: center;
-    line-height: 30px;
-    padding-top: 15px;
+    font-size: 32px;                             /* Tamanho da fonte */
+    font-family: 'Verdana';                      /* Fonte dos títulos */
+    text-align: center;                          /* Centraliza o texto */
+    line-height: 30px;                           /* Altura da Linha */
+    padding-top: 15px;                           /* Espaço interno superior */
 }
 
-p {
-    line-height: 18px;
-    font-family: Arial, sans-serif;
-}
-
+/* Texto em destaque */
 .destaque {
-    font-style: italic;
+    font-style: italic;                            /* Texto em itálico */
 }
+
+main {
+    max-width: 900px;                              /* Largura máxima */
+    margin: 120px auto 0;                          /* Empurra para baixo, centraliza horizontalmente e sem margem embaixo. */
+    padding: 0 20px;                               /* O Zero significa "padding no topo e no fundo" e (20px nas laterais) Espaço só nas laterais */
+    text-align: center;
+}
+
 
 
 
