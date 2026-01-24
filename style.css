@@ -5,11 +5,6 @@
 }
 
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-
 header {
     position: fixed;
     top: 20px;
@@ -70,6 +65,24 @@ header {
 
 .menu-toggle.active span {
   background:white;
+}
+
+
+h1, h2 {
+    font-size: 32px;
+    font-family: 'Verdana';
+    text-align: center;
+    line-height: 30px;
+    padding-top: 15px;
+}
+
+p {
+    line-height: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.destaque {
+    font-style: italic;
 }
 
 
